@@ -90,7 +90,7 @@ class WidgetBrightDisplayConfigureActivity : SimpleActivity() {
 
     private val seekbarChangeListener = object : SeekBar.OnSeekBarChangeListener {
         override fun onProgressChanged(seekBar: SeekBar, progress: Int, fromUser: Boolean) {
-            mWidgetAlpha = progress.toFloat() / 100.toFloat()
+            mWidgetAlpha = (progress.toFloat()) / 100.toFloat()
             updateColors()
         }
 

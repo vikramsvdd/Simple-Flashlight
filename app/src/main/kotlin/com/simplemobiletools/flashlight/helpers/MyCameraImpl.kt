@@ -207,7 +207,7 @@ class MyCameraImpl(val context: Context) {
         Handler(context.mainLooper).post(mainRunnable)
     }
 
-    private fun disableFlashlight() {
+    fun disableFlashlight() {
         if (isStroboscopeRunning || isSOSRunning) {
             return
         }
